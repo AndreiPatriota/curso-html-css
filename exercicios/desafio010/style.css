@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'droid';
+  src: url('fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500&family=Public+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  font-family: 'Asap', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0px;
+  margin-top: 0px;
+  background-color: rgb(164, 225, 174);
+}
+
+header {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(128, 188, 120),
+    rgb(76, 114, 71),
+    rgb(69, 103, 60),
+    rgb(33, 50, 26),
+    rgb(2, 2, 1)
+  );
+  background-attachment: fixed;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+}
+header > h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  text-align: center;
+}
+header > h2 {
+  width: 400px;
+  font-size: 1.1em;
+  font-weight: lighter;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+nav > a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+nav > a:hover {
+  color: rgb(255, 191, 186);
+  text-decoration: underline;
+}
+
+main {
+  margin: 0 5% 2% 5%;
+  width: 90%;
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 4px black;
+}
+
+section#conteudo-principal {
+  padding: 0px 20px;
+}
+section#conteudo-principal p {
+  text-align: justify;
+  text-indent: 20px;
+}
+section#conteudo-principal h1,
+section#conteudo-principal h2 {
+  font-family: 'droid';
+  background-image: linear-gradient(to right, #a4e1ae, white);
+  background-attachment: fixed;
+}
+
+section#video-android {
+  background-color: rgb(33, 50, 26);
+  position: relative;
+  width: 100%;
+  height: 0%;
+  padding-bottom: 56.25%;
+}
+iframe {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+section#conclusao {
+  padding: 5px 20px;
+}
+section#conclusao p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+aside#aprofundar {
+  position: relative;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 7px black;
+  margin: 10px;
+  background-color: rgba(143, 238, 159, 0.349);
+  margin-bottom: 10px;
+}
+aside#aprofundar h3 {
+  background-color: rgb(76, 114, 71);
+  color: white;
+  margin: 0px;
+  border-radius: 15px 15px 0px 0px;
+  height: 30px;
+  text-align: left;
+  padding-top: 7px;
+  padding-left: 5px;
+}
+
+#conteudo-aside {
+  margin: 0px 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(33, 50, 26);
+  margin-top: 2px;
+  padding: 5px;
+}
+footer > p {
+  margin: 0px;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: light;
+}
+
+span#autor {
+  font-size: 1em;
+  font-weight: bolder;
+}
+div#dan-droids {
+  text-align: center;
+}
+div#bugdroid-logo {
+  text-align: center;
+}
+div#irina-pic {
+  text-align: center;
+}
+div#versoes-android {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+div#versoes-android ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+div#versoes-android li {
+  /* padding: 0px 20px; */
+}
+
+strong.chave-principal {
+  color: rgb(59, 90, 47);
+}
+
+a.links-corpo {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(59, 90, 47);
+}
+a.links-corpo:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #e26d63;
+}
+a.links-corpo::after {
+  content: ' 🔗';
+  text-decoration: none;
+  font-weight: bold;
+  color: #4c4746;
+}

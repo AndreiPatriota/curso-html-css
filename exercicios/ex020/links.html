@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+      /* 
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = child 
+      */
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        color: #54595f;
+      }
+
+      h1,
+      h2 {
+        font-family: 'Roboto', sans-serif;
+        color: #020101;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      a {
+        color: red;
+        text-decoration: none;
+      }
+
+      .especial {
+        background-color: rgb(233, 184, 184);
+      }
+
+      /*
+         Pseudo-classes 
+      */
+      a:visited {
+        color: darkred;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #020101;
+      }
+
+      a:active {
+        color: green;
+      }
+
+      /* 
+        Pseudo-elementos 
+      */
+      .especial::after {
+        content: ' ⇦';
+        text-decoration: none;
+        color: #54595f;
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+
+      .especial::before {
+        content: '⇨ ';
+        text-decoration: none;
+        color: #54595f;
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li>
+        <a
+          href="https://gustavoguanabara.github.io"
+          target="_blank"
+          rel="external"
+          >Repositório do GitHub</a
+        >
+      </li>
+      <li>
+        <a
+          class="especial"
+          href="https://www.youtube.com/cursoemvideo/"
+          rel="external"
+          target="_blank"
+          >Canal do YouTube</a
+        >
+      </li>
+      <li>
+        <a
+          class="especial"
+          href="https://www.cursoemvideo.com"
+          rel="external"
+          target="_blank"
+          >Site do CursoemVideo</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
