@@ -8,33 +8,33 @@
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
-      table {
+      .b-table {
         width: 500px;
         border-collapse: collapse;
       }
-      td,
-      th {
+      .b-table td,
+      .b-table th {
         border: 1px solid black;
         padding: 10px;
         text-align: center;
         vertical-align: center;
       }
-      thead,
-      tr.linha_media {
+      .b-table__thead,
+      .b-table__tr_media {
         background-color: gray;
         color: white;
       }
-      tr.linha_media > th {
+      .b-table__tr_media > th {
         text-align: left;
       }
     </style>
   </head>
   <body>
-    <table>
+    <table class="b-table">
       <caption>
         Tabela de Notas
       </caption>
-      <thead>
+      <thead class="b-table__thead">
         <tr>
           <th rowspan="2" scope="col">Área</th>
           <th rowspan="2" scope="col">Disciplinas</th>
@@ -72,7 +72,7 @@
           <td>0.0</td>
           <td>0.0</td>
         </tr>
-        <tr class="linha_media">
+        <tr class="b-table__tr b-table__tr_media">
           <th colspan="4" scope="row">Média de Exatas</th>
           <td>0.0</td>
         </tr>
@@ -89,7 +89,7 @@
           <td>0.0</td>
           <td>0.0</td>
         </tr>
-        <tr class="linha_media">
+        <tr class="b-table__tr b-table__tr_media">
           <th colspan="4" scope="row">Média de Humanas</th>
           <td>0.0</td>
         </tr>
