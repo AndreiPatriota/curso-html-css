@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Estilo para Telas */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+header {
+  background-color: lightgrey;
+}
+
+header > h1 {
+  text-align: center;
+}
+
+menu ul {
+  list-style-type: none;
+  background-color: grey;
+}
+
+menu li {
+  background-color: darkgray;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}
+
+article {
+    width: 600px;
+    margin: auto;
+}
