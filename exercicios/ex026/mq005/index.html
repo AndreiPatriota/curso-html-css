@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-query.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body onresize="mudouTamanho()">
+    <header>
+      <h1>Meu Site</h1>
+      <i id="burger" class="material-icons" onclick="toggleMenu()">menu</i>
+      <menu id="menu_itens">
+        <ul>
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+          <li><a href="#">Opção 3</a></li>
+          <li><a href="#">Opção 4</a></li>
+          <li><a href="#">Opção 5</a></li>
+        </ul>
+      </menu>
+    </header>
+    <main>
+      <article>
+        <h2>Testando Media Queries</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          voluptatem iure modi voluptatibus culpa quisquam quasi quaerat sed
+          laudantium praesentium maiores reprehenderit repellendus ex sequi a
+          accusantium hic, totam nulla. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Asperiores voluptatum harum illum quaerat commodi
+          perspiciatis ab, ipsa accusantium perferendis, sed cupiditate
+          recusandae ea dignissimos nam nesciunt. Doloribus aspernatur id ex.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          quos recusandae nulla dolorem a minus unde iusto et perspiciatis
+          pariatur, consectetur numquam eius laboriosam qui esse explicabo
+          facilis natus odio.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+          esse, maiores hic, dolorem et fugit explicabo neque culpa aspernatur
+          quo beatae harum velit veniam doloribus, quidem praesentium tenetur!
+          Dicta, ut? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugit id, sit doloremque assumenda aspernatur suscipit reprehenderit
+          blanditiis dolores obcaecati veniam optio exercitationem at illo
+          nostrum excepturi, dicta praesentium mollitia quae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ut
+          odit voluptate sit maxime deleniti porro quaerat provident asperiores
+          corporis, ex, recusandae quo minus vero pariatur excepturi ducimus
+          magnam distinctio? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Recusandae, deleniti voluptate expedita magni assumenda dolore,
+          modi totam aspernatur facilis possimus voluptatem veniam laudantium
+          perspiciatis eius molestias, sed qui dolorum ab. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Unde earum, vitae iste error illo
+          libero ab dolorum reiciendis qui ex a pariatur nemo sed eius aperiam
+          officiis voluptas provident quas! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Vitae possimus adipisci ipsa, ab,
+          officia quia est accusantium minima unde sunt velit asperiores earum?
+          Laborum dolor, rem voluptate eius autem sequi?
+        </p>
+      </article>
+    </main>
+
+    <script>
+      function toggleMenu(event) {
+        const displayAtual = menu_itens.style.display;
+        menu_itens.style.display = displayAtual === 'block' ? 'none' : 'block';
+      }
+
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          menu_itens.style.display = 'block';
+        } else {
+          menu_itens.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>
